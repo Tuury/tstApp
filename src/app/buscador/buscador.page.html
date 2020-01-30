@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
+        <ion-buttons slot="end">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-img src="../../assets/logo.svg"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <div class="center">
+        <ion-label>Encontrá nuestros productos.</ion-label>
+    </div>
+
+    <div class="center">
+        <ion-searchbar placeholder="" color="dark" ></ion-searchbar>
+    </div>
+
+    <div class="center">
+    <ion-list inset="true">
+        <div *ngFor="let l of list">
+            <p class="accordion" (click)="isClicked(l)">
+              <strong>{{l.label}}</strong>
+              <ion-icon name="{{!l.expanded ? 'arrow-dropdown' : 'arrow-dropup'}}" slot="end"></ion-icon>
+            </p>
+            <div *ngIf="l.expanded" class="panel">
+                <div *ngFor="let i of l.items">
+                    <p>{{i}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-list>
+    </div>
+
+
+</ion-content>

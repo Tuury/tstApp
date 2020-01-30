@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-img src="../../assets/logo.svg"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" padding>
+    <ion-grid>
+        <ion-row justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div align-items-start>
+                    <h4>Iniciar Sesión</h4>
+                </div>
+                <div class="loginForm">
+                    <ion-item>
+                        <ion-input type="text" placeholder="Teléfono Móvil / Mail"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-input type="password" placeholder="Password"></ion-input>
+                    </ion-item>
+
+                    <div class="checkbox">
+                        <ion-checkbox></ion-checkbox>
+                        <ion-label>Recordarme</ion-label>
+                    </div>
+                </div>
+                <div padding>
+                    <ion-button size="large" expand="block" fill="solid" color="light">Iniciar</ion-button>
+                </div>
+                <div padding>
+                    <ion-button size="large" expand="block" fill="outline" color="light" routerLink="/registro">Primer Ingreso</ion-button>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+    <div class="ion-text-center">
+        <p>Recuperar Contraseña</p>
+    </div>
+</ion-footer>

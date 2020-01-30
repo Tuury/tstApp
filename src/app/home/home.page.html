@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
+        <ion-buttons slot="end">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-img src="../../assets/logo.svg"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager="true">
+        <ion-slide>
+            <img src="../../assets/images.jpeg" alt="">
+        </ion-slide>
+        <ion-slide>
+            <img src="../../assets/download.jpeg" alt="">
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+
+<ion-footer>
+    <ion-list>
+        <ion-item color="dark" routerLink="/misPedidos">
+            <ion-label>Mis Pedidos</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+        <ion-item color="dark" routerLink="/productos">
+            <ion-label>Productos</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+        <ion-item color="dark" routerLink="/mis-facturas">
+            <ion-label>Mis Facturas</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+        <ion-item color="dark" routerLink="/perfil">
+            <ion-label>Mi Perfil</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+        <ion-item color="dark" routerLink="/descargas">
+            <ion-label>Descargas</ion-label>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-footer>

@@ -1,0 +1,30 @@
+ion-img {
+  filter: invert(1);
+}
+ion-item {
+  --background: var(--ion-color-dark);
+  --border-color: white;
+  --color: white;
+  padding-top: 10px;
+}
+
+ion-button {
+  --border-radius: 40px !important;
+  --border-width: 1px;
+  font-size: 15px;
+}
+.loginForm{
+  padding-top: 50px;
+}
+ion-checkbox{
+  --size: 15px;
+}
+.checkbox{
+  padding: 20px 0 0 10px;
+}
+ion-footer {
+  background-color: var(--ion-color-dark);
+  color: white;
+  align-items: center;
+  text-decoration: underline;
+}

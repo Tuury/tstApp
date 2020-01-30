@@ -1,0 +1,135 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-img src="../../assets/logo.svg"></ion-img>
+        <ion-menu-button slot="end"></ion-menu-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <ion-slides scrollbar="true">
+        <ion-slide>
+            <ion-list inset lines="inset">
+                <ion-text class="ion-padding-start">
+                    <h1>Registro</h1>
+                </ion-text>
+                <h3>Complete sus datos. Recuerde que debe conocer su Nro. de cliente para completar el registro. Ante
+                    cualquier consulta comuniquese con <strong>info@tst.com.ar</strong></h3>
+                <ion-item>
+                    <ion-label>Nombre:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Apellido:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>E-mail:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Teléfono:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Tel. Móvil:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Nombre de Empresa:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Cuit:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Dirección:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Localidad:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Provincia:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Nro. de Cliente:</ion-label>
+                    <ion-input></ion-input>
+                </ion-item>
+                <ion-text class="ion-padding-start">
+                    <p>(*)Si no conoce su Nro. de Cliente comuniquese con TST.</p>
+                </ion-text>
+                <div id="modifyPwd">
+                    <ion-item>
+                        <ion-input placeholder="Contraseña" type="password"></ion-input>
+                        <ion-icon name="eye" slot="end" color="light"></ion-icon>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input placeholder="Repita Contraseña" type="password"></ion-input>
+                        <ion-icon name="eye" color="light"></ion-icon>
+                    </ion-item>
+                    <div>
+                        <ion-button class="next" shape="round" fill="solid" color="light">
+                            <ion-icon src="../../assets/next.svg"></ion-icon>
+                        </ion-button>
+                    </div>
+                </div>
+            </ion-list>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-list>
+                <h1>Registro</h1>
+                <p>Se ha enviado un SMS a 11 xxx-xxx. Por favor complete el código recibido.</p>
+                <ion-grid id="numbersGrid">
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-button class="next" shape="round" fill="solid" color="light">
+                    <ion-icon src="../../assets/next.svg"></ion-icon>
+                </ion-button>
+                <ion-button class="prev" shape="round" fill="solid" color="light">
+                    <ion-icon src="../../assets/left-arrow.svg"></ion-icon>
+                </ion-button>
+            </ion-list>
+
+        </ion-slide>
+
+        <ion-slide>
+            <ion-card>
+                <ion-item href="#" class="activated">
+                    <ion-icon name="wifi" slot="start"></ion-icon>
+                    <ion-label>Card Link Item 1 .activated</ion-label>
+                </ion-item>
+
+                <ion-item href="#">
+                    <ion-icon name="wine" slot="start"></ion-icon>
+                    <ion-label>Card Link Item 2</ion-label>
+                </ion-item>
+            </ion-card>
+        </ion-slide>
+
+    </ion-slides>
+</ion-content>
