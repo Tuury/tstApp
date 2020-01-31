@@ -11,18 +11,40 @@
 
 <ion-content>
     <div id="searchDiv">
-      <ion-grid>
-        <ion-row>
-          <ion-button fill="clear">
-            <ion-icon name="arrow-dropdown"></ion-icon>
-          </ion-button>
-          <ion-searchbar placeholder="" color="dark"></ion-searchbar>
-        </ion-row>
-        <ion-row>
-          <ion-label color="light">Coccion</ion-label>
-          <ion-label color="light">Manguera</ion-label>
-        </ion-row>
-      </ion-grid>
-
+        <ion-grid>
+            <ion-row class="ion-justify-content-around">
+                <ion-button fill="clear">
+                    <ion-icon src="../../assets/left-arrow.svg" color="light"></ion-icon>
+                </ion-button>
+                <ion-searchbar placeholder="" color="dark"></ion-searchbar>
+            </ion-row>
+        </ion-grid>
+        <div class="headers">
+            <ion-button color="dark" (click)="opcionesHeader1()">{{header1}}</ion-button>
+            <ion-button color="dark" (click)="opcionesHeader2()">{{header2}}</ion-button>
+        </div>
     </div>
+    <ion-list inset="true">
+        <ion-item *ngFor="let p of productos" class="center">
+            <ion-grid>
+                <ion-row padding-top>
+                    <div class="code">
+                        <div>
+                            <p>Codigo</p>
+                            <p>{{p.codigo}}</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="details">
+                        <p>{{p.nombre}}</p>
+                        <p>{{p.precio}}</p>
+                    </div>
+                </ion-row>
+                <ion-row padding-top padding-bottom>
+                    <ion-button expand="round" color="dark" (click)="agregarProducto(p.nombre)">Agregar</ion-button>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </ion-list>
 </ion-content>
