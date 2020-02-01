@@ -1,0 +1,19 @@
+ion-header {
+  z-index: 0;
+}
+ion-icon {
+  width: 100px;
+  height: 100px;
+}
+
+ion-button {
+  width: 100%;
+}
+h1, p {
+  white-space: pre-line;
+}
+
+.grid {
+  display: grid;
+  padding-top: 20%;
+}

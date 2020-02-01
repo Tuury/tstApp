@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {IonSlides} from '@ionic/angular';
+import {IonSlides, ModalController} from '@ionic/angular';
+import {ModalPage} from "../modal/modal.page";
 
 @Component({
   selector: 'app-registro',
@@ -8,7 +9,7 @@ import {IonSlides} from '@ionic/angular';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalController: ModalController) { }
 
   @ViewChild('sliderRef', { static: true }) protected slides: IonSlides;
 
@@ -21,6 +22,17 @@ export class RegistroPage implements OnInit {
 
   async slidPrev(): Promise<void> {
     await this.slides.slidePrev();
+  }
+
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      componentProps: {
+        title: 'Registro\n <strong>Confirmado.\n</strong>',
+        subTitle: '¡<strong>Bienvenido a la nueva App de TST!.</strong>\nPuede iniciar a realizar pedidos'
+      }
+    });
+    return await modal.present();
   }
 
 }

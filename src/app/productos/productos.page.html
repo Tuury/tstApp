@@ -27,7 +27,7 @@
     <ion-list inset="true">
         <ion-item *ngFor="let p of productos" class="center">
             <ion-grid>
-                <ion-row padding-top>
+                <ion-row>
                     <div class="code">
                         <div>
                             <p>Codigo</p>
@@ -41,7 +41,7 @@
                         <p>{{p.precio}}</p>
                     </div>
                 </ion-row>
-                <ion-row padding-top padding-bottom>
+                <ion-row class="ion-padding-top">
                     <ion-button expand="round" color="dark" (click)="agregarProducto(p.nombre)">Agregar</ion-button>
                 </ion-row>
             </ion-grid>

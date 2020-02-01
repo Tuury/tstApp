@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon src="../../assets/search.svg" slot="end" size="large"></ion-icon>
+        <ion-icon src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
+        <ion-buttons slot="end">
+            <ion-menu-button color="dark"></ion-menu-button>
+        </ion-buttons>
+        <ion-img src="../../assets/logo.svg"></ion-img>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+    <div class="back">
+        <ion-grid>
+            <ion-row>
+                <ion-button fill="clear">
+                    <ion-icon src="../../assets/left-arrow.svg" color="light"></ion-icon>
+                </ion-button>
+            </ion-row>
+            <ion-row class="ion-padding-bottom">
+                <ion-label color="light" class="ion-padding-start">Carrito</ion-label>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <ion-list inset="true">
+        <ion-grid>
+            <ion-row >
+                <ion-col ><strong>Código</strong></ion-col>
+                <ion-col size="4"><strong>Producto</strong></ion-col>
+                <ion-col><strong>Cant.</strong></ion-col>
+                <ion-col><strong>Costo</strong></ion-col>
+            </ion-row>
+            <ion-row *ngFor="let p of products">
+                <ion-col>{{p.cod}}</ion-col>
+                <ion-col size="4">{{p.nombre}}</ion-col>
+                <ion-col>{{p.cantidad}}</ion-col>
+                <ion-col>{{p.precio}}</ion-col>
+            </ion-row>
+        </ion-grid>
+      <ion-row class="total">
+        <ion-col ><strong>Total</strong></ion-col>
+        <ion-col size="4"></ion-col>
+        <ion-col>15</ion-col>
+        <ion-col>4050</ion-col>
+      </ion-row>
+      <ion-item class="ion-padding-top">
+        <ion-textarea placeholder="Comentario"></ion-textarea>
+      </ion-item>
+      <div class="flex ion-justify-content-center">
+        <ion-button expand="round" color="dark">Enviar</ion-button>
+      </div>
+
+    </ion-list>
+</ion-content>

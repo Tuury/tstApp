@@ -1,0 +1,13 @@
+.back {
+  background-color: var(--ion-color-dark);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px dashed black;
+  height: 60%;
+}
+ion-label {
+  font-size: 15px !important;
+}

@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./descargas/descargas.module').then(m => m.DescargasPageModule)
   },
   {
-    path: 'misPedidos',
+    path: 'mis-pedidos',
     loadChildren: () => import('./mis-pedidos/mis-pedidos.module').then(m => m.MisPedidosPageModule)
   },
   {
@@ -40,7 +40,11 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
   { path: 'recuperar-password', loadChildren: './recuperar-password/recuperar-password.module#RecuperarPasswordPageModule' },
-  { path: 'buscador', loadChildren: './buscador/buscador.module#BuscadorPageModule' }
+  { path: 'buscador', loadChildren: './buscador/buscador.module#BuscadorPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'carrito', loadChildren: './carrito/carrito.module#CarritoPageModule' }
+
+
 ];
 
 @NgModule({

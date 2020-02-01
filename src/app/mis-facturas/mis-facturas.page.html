@@ -1,9 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>misFacturas</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-icon src="../../assets/search.svg" slot="end" size="large"></ion-icon>
+        <ion-icon src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
+        <ion-buttons slot="end">
+            <ion-menu-button color="dark"></ion-menu-button>
+        </ion-buttons>
+        <ion-img src="../../assets/logo.svg"></ion-img>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <div class="back">
+        <ion-grid>
+            <ion-row>
+                <ion-button fill="clear">
+                    <ion-icon src="../../assets/left-arrow.svg" color="light"></ion-icon>
+                </ion-button>
+            </ion-row>
+            <ion-row>
+                <ion-label color="light" class="ion-padding-start ion-padding-bottom">Mis Facturas</ion-label>
+            </ion-row>
+        </ion-grid>
+    </div>
 
+    <ion-list inset="true">
+        <ion-item *ngFor="let f of facturas" class="center">
+            <ion-grid>
+                <ion-row class="ion-justify-content-evenly ion-padding-top">
+                    <ion-label>{{f.fecha}}</ion-label>
+                    <ion-label>{{f.codigo}}</ion-label>
+                    <ion-label>{{f.costo}}</ion-label>
+                </ion-row>
+                <ion-row class="ion-justify-content-evenly ion-padding-bottom ion-padding-top">
+                    <ion-button size="medium" expand="round" color="dark" disabled="true">Ver</ion-button>
+                    <ion-button size="medium" expand="round" color="dark">Descargar</ion-button>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </ion-list>
 </ion-content>

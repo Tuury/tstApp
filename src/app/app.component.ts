@@ -24,22 +24,22 @@ export class AppComponent {
     {
       title: 'Productos',
       url: '/productos',
-      icon: 'list'
+      icon: 'laptop'
     },
     {
       title: 'MIs Facturas',
       url: '/mis-facturas',
-      icon: 'list'
+      icon: 'document'
     },
     {
       title: 'Mi Perfil',
       url: '/perfil',
-      icon: 'list'
+      icon: 'person'
     },
     {
       title: 'Descargas',
       url: '/descargas',
-      icon: 'list'
+      icon: 'download'
     }
   ];
 

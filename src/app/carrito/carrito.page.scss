@@ -1,0 +1,32 @@
+.back {
+  background-color: var(--ion-color-dark);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+ion-list {
+  background-color: var(--ion-color-light);
+}
+
+ion-row {
+  border-bottom: 1px dashed black;
+}
+
+ion-list > ion-grid > ion-row {
+  background-color: var(--ion-color-light);
+  padding: 10px 0 10px 0;
+}
+
+ion-textarea {
+  height: 100px;
+}
+
+.total {
+  width: 100%;
+  border-radius: 40px;
+  background-color: #37485a !important;
+  color: white;
+}
