@@ -6,7 +6,7 @@
 </ion-header>
 
 <ion-content color="dark">
-    <ion-slides scrollbar="true" #sliderRef [options]="{allowTouchMove: false}">
+    <ion-slides scrollbar="false" #sliderRef [options]="{allowTouchMove: false, scrollbar: false}">
         <ion-slide>
             <ion-list inset lines="inset">
                 <ion-text class="ion-padding-start">
@@ -110,7 +110,7 @@
                 <ion-button (click)="presentModal()" class="next" shape="round" fill="solid" color="light">
                     <ion-icon src="../../assets/next.svg"></ion-icon>
                 </ion-button>
-                <ion-button  class="prev" shape="round" fill="solid" color="light" (click)="slidPrev()">
+                <ion-button class="prev" shape="round" fill="solid" color="light" (click)="slidPrev()">
                     <ion-icon src="../../assets/left-arrow.svg"></ion-icon>
                 </ion-button>
             </ion-list>

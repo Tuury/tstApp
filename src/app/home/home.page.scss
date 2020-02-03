@@ -4,4 +4,6 @@ ion-list{
 
 ion-item > ion-icon {
   filter: invert(1);
+  position: absolute;
+  right: 4%;
 }
