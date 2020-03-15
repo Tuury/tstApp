@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.slideHeight {
+  height: 90vh;
+}
+
 ion-img {
   filter: invert(1);
 }
@@ -15,23 +19,34 @@ ion-img {
 ion-item {
   --background: var(--ion-color-dark);
   --color: white;
-  --highlight-color-focused: transparent ;
+  --highlight-color-focused: transparent;
 }
 
-.item-highlight{
+.item-highlight {
   height: 0;
 }
-h3{
+
+h3 {
   text-align: left;
   font-size: 15px;
   font-weight: normal;
 }
-ion-button{
+
+ion-button {
   --border-radius: 50%;
 }
+
 p {
   padding-top: 5px;
   font-size: 15px;
+}
+
+.pregistro {
+  padding-top: 5px;
+  padding-bottom: 15vh;
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
 }
 
 .prev {
@@ -74,4 +89,14 @@ p {
 
 #codeInput {
   background-image: url("../../assets/6731032.png");
+  padding-top: 30vh;
+  height: 100px;
+  font-size: 80px;
+  letter-spacing: 30px;
+  padding-bottom: 30vh;
+}
+
+#codeSlide {
+  padding-top: 200px;
+  height: 100%;
 }

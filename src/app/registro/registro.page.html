@@ -79,27 +79,32 @@
                         <ion-icon name="eye"></ion-icon>
                     </div>
                 </ion-item>
-                <div>
-                    <ion-button class="next" shape="round" fill="solid" color="light" (click)="slideNext()">
-                        <ion-icon src="../../assets/next.svg"></ion-icon>
-                    </ion-button>
+                <div class="next">
+                    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+                        <ion-fab-button (click)="slideNext()" color="dark">
+                            <ion-icon src="../../assets/next.svg"></ion-icon>
+                        </ion-fab-button>
+                    </ion-fab>
                 </div>
             </ion-list>
         </ion-slide>
 
-        <ion-slide>
-            <ion-list>
-                <h1>Registro</h1>
-                <p>Se ha enviado un SMS a 11 xxx-xxx. Por favor complete el código recibido.</p>
-                <ion-input id="codeInput"></ion-input>
-                <ion-button (click)="presentModal()" class="next" shape="round" fill="solid" color="light">
-                    <ion-icon src="../../assets/next.svg"></ion-icon>
-                </ion-button>
-                <ion-button class="prev" shape="round" fill="solid" color="light" (click)="slidPrev()">
-                    <ion-icon src="../../assets/left-arrow.svg"></ion-icon>
-                </ion-button>
-            </ion-list>
-
+        <ion-slide class="block slideHeight">
+            <h1>Registro</h1>
+            <p class="pregistro">Se ha enviado un SMS a 11 xxx-xxx. Por favor complete el código recibido.</p>
+            <ion-input type="text" maxlength="4" id="codeInput"></ion-input>
+            <div class="next">
+                <ion-fab vertical="bottom" horizontal="start" >
+                    <ion-fab-button (click)="slidPrev()" color="light">
+                        <ion-icon src="../../assets/left-arrow.svg"></ion-icon>
+                    </ion-fab-button>
+                </ion-fab>
+                <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+                    <ion-fab-button (click)="presentModal()" color="light">
+                        <ion-icon src="../../assets/next.svg"></ion-icon>
+                    </ion-fab-button>
+                </ion-fab>
+            </div>
         </ion-slide>
     </ion-slides>
 </ion-content>
