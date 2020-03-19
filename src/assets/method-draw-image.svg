@@ -1,0 +1,22 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <metadata transform="matrix(0.017777779632144552,0,0,0.017777779632144552,0,0) ">Svg Vector Icons : http://www.onlinewebfonts.com/icon</metadata>
+  <g stroke="null" id="svg_7">
+   <g stroke="null" transform="matrix(0.054108767103141886,0,0,0.02529804171643016,-610.4514974417652,-82.90427019716873) " id="svg_4">
+    <g stroke="null" id="svg_5" transform="matrix(1,0,0,-1,0,1008) ">
+     <path stroke="null" id="svg_6" d="m16568.699023,-10001.865007l233.8,-233.8l-233.8,-233.8l-27,27l188.9,188.8l-908.1,0l0,36l908.1,0l-188.8,188.8l26.9,27z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

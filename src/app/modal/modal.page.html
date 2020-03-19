@@ -1,19 +1,14 @@
-<ion-header>
-    <ion-toolbar>
-        <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-img src="../../assets/logo.svg"></ion-img>
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
+    <div class="flex">
+        <ion-img src="../../assets/logo.svg"></ion-img>
+        <ion-icon id="menu" name="menu"></ion-icon>
+    </div>
     <div class="grid ion-justify-content-center">
-        <h1 [innerHTML]="title">
+        <h1 id="title" [innerHTML]="title">
         </h1>
-        <p  [innerHTML]="subTitle"></p>
+        <p id="subtitle" [innerHTML]="subTitle" class="ion-margin-bottom ion-margin-top"></p>
         <ion-icon src="../../assets/cart.svg"></ion-icon>
-        <div class="ion-padding-top">
+        <div id="ingresarBtn">
             <ion-button expand="round" color="dark" (click)="ingresar()">Ingresar</ion-button>
         </div>
     </div>
