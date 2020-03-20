@@ -9,44 +9,34 @@
 </ion-header>
 
 <ion-content color="dark">
-<!--    <div class="center">-->
-<!--        <ion-label>Encontrá nuestros productos.</ion-label>-->
-<!--    </div>-->
-
-<!--    <div class="center">-->
-<!--        <ion-searchbar placeholder="" color="dark" ></ion-searchbar>-->
-<!--    </div>-->
-
-<!--    <div class="center">-->
-<!--    <ion-list inset="true">-->
-<!--        <div *ngFor="let l of list">-->
-<!--            <p class="accordion" (click)="isClicked(l)">-->
-<!--              <strong>{{l.label}}</strong>-->
-<!--              <ion-icon name="{{!l.expanded ? 'arrow-dropdown' : 'arrow-dropup'}}" slot="end"></ion-icon>-->
-<!--            </p>-->
-<!--            <div *ngIf="l.expanded" class="panel">-->
-<!--                <div *ngFor="let i of l.items">-->
-<!--                    <p>{{i}}</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </ion-list>-->
-<!--    </div>-->
-
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-    </ul>
+    <div class="center">
+        <ion-label>Encontrá nuestros productos.</ion-label>
+    </div>
+    <div class="center">
+        <ion-searchbar placeholder="" color="dark"></ion-searchbar>
+    </div>
 
 
+    <ion-list inset="true">
+        <ion-item *ngFor="let i of list[index].items" color="dark">
+            <ion-text>{{i}}</ion-text>
+        </ion-item>
+    </ion-list>
+
+
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button (click)="tabClicked(0)">
+                <ion-label>Cocina</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button (click)="tabClicked(1)">
+                <ion-label>Ventilacion</ion-label>
+            </ion-tab-button>
+
+            <ion-tab-button (click)="tabClicked(2)">
+                <ion-label>Hogar</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
 </ion-content>

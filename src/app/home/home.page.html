@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="light-shade">
         <ion-buttons slot="end">
             <ion-icon routerLink="/carrito" src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
             <ion-menu-button color="dark"></ion-menu-button>
@@ -8,7 +8,7 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true" scrollY="false">
+<ion-content fullscreen="true" scrollY="false" color="light">
     <div class="wrapper">
         <ion-slides pager="true" [options]="{height: 200}">
             <ion-slide>
@@ -34,8 +34,8 @@
             </ion-item>
             <ion-item color="dark" routerLink="/mis-facturas">
                 <ion-label class="ion-padding-start">Mis Facturas</ion-label>
-                <ion-icon class="ion-padding-end" color="light" size="large"
-                          src="../../assets/arrow-right.svg"></ion-icon>
+                <ion-img class="ion-padding-end" size="large"
+                          src="../../assets/longarrow.png"></ion-img>
             </ion-item>
             <ion-item color="dark" routerLink="/perfil">
                 <ion-label class="ion-padding-start">Mi Perfil</ion-label>

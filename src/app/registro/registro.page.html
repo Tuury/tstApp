@@ -73,7 +73,7 @@
                 </ion-item>
                 <ion-item color="light">
                     <ion-label position="floating">Repita Contraseña</ion-label>
-                    <div class="flex">
+                    <div class="flex ion-justify-content-center">
                         <ion-input type="password">
                         </ion-input>
                         <ion-icon name="eye"></ion-icon>
@@ -92,7 +92,7 @@
         <ion-slide class="block slideHeight">
             <h1>Registro</h1>
             <p class="pregistro">Se ha enviado un SMS a 11 xxx-xxx. Por favor complete el código recibido.</p>
-            <ion-input type="text" maxlength="4" id="codeInput" pattern="^[0-9]*$"></ion-input>
+            <ion-input type="text" maxlength="4" id="codeInput" [pattern]="'^[0-9]*$'"></ion-input>
             <div class="next">
                 <ion-fab vertical="bottom" horizontal="start" >
                     <ion-fab-button (click)="slidPrev()" color="light">

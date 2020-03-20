@@ -10,11 +10,13 @@ export class BuscadorPage implements OnInit {
     constructor() {
     }
 
+    index = 0;
+
     list: any[] = [{
         label: 'Cocción',
         expanded: false,
         items: [
-          1, 2, 3
+            'Anafes', 'Cocinas', 'Campanas', 'Test'
         ]
     },
         {
@@ -37,8 +39,8 @@ export class BuscadorPage implements OnInit {
     ngOnInit() {
     }
 
-    isClicked(item: any) {
-        item.expanded = !item.expanded;
+    tabClicked(index: number) {
+        this.index = index;
     }
 
 }
