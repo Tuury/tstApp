@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./productos/productos.module').then(m => m.ProductosPageModule)
   },
   {
+    path: 'productos/product/:id',
+    loadChildren: () => import('./productos/product/product.module').then(m => m.ProductPageModule)
+  },
+  {
     path: 'mis-facturas',
     loadChildren: () => import('./mis-facturas/mis-facturas.module').then(m => m.MisFacturasPageModule)
   },
@@ -42,7 +46,9 @@ const routes: Routes = [
   { path: 'recuperar-password', loadChildren: './recuperar-password/recuperar-password.module#RecuperarPasswordPageModule' },
   { path: 'buscador', loadChildren: './buscador/buscador.module#BuscadorPageModule' },
   { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
-  { path: 'carrito', loadChildren: './carrito/carrito.module#CarritoPageModule' }
+  { path: 'carrito', loadChildren: './carrito/carrito.module#CarritoPageModule' },
+  { path: 'product', loadChildren: './productos/product/product.module#ProductPageModule' }
+
 
 
 ];

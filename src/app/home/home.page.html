@@ -1,51 +1,48 @@
 <ion-header>
     <ion-toolbar color="light-shade">
         <ion-buttons slot="end">
-            <ion-icon routerLink="/carrito" src="../../assets/shopping-cart.svg" slot="end" size="large"></ion-icon>
+            <ion-icon class="headerIcon" routerLink="/carrito" src="../../assets/shopping-cart.svg" slot="end"
+                      size="large"></ion-icon>
             <ion-menu-button color="dark"></ion-menu-button>
         </ion-buttons>
-        <ion-img src="../../assets/logo.svg"></ion-img>
+        <ion-img id="logo" src="../../assets/logo.svg"></ion-img>
     </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true" scrollY="false" color="light">
+<ion-content fullscreen="true" scrollY="false" color="medium">
     <div class="wrapper">
         <ion-slides pager="true" [options]="{height: 200}">
-            <ion-slide>
-                <img src="../../assets/images.jpeg" alt="">
-            </ion-slide>
-            <ion-slide>
-                <img src="../../assets/download.jpeg" alt="">
-            </ion-slide>
+            <ion-slide *ngFor="let img of images">
+                <img src="{{img.src}}" alt="" (click)="imageClicked(img.link)">
+            </ion-slide>ro
         </ion-slides>
     </div>
 
-    <div class="wrapper"></div>
     <ion-list>
         <div class="footer">
-            <ion-item color="dark" routerLink="/mis-pedidos" class="ion-padding-top">
+            <ion-item color="dark" routerLink="/mis-pedidos" class="ion-padding-top" lines="none">
                 <ion-label class="ion-padding-start">Mis Pedidos</ion-label>
-                <ion-icon class="ion-padding-end" size="large" src="../../assets/arrow-right.svg"></ion-icon>
+                <ion-img class="ion-padding-end" size="large" src="../../assets/longarrow.png"></ion-img>
             </ion-item>
-            <ion-item color="dark" routerLink="/productos">
+            <ion-item color="dark" routerLink="/productos" lines="none">
                 <ion-label class="ion-padding-start">Productos</ion-label>
-                <ion-icon class="ion-padding-end" color="light" size="large"
-                          src="../../assets/arrow-right.svg"></ion-icon>
+                <ion-img class="ion-padding-end" size="large"
+                         src="../../assets/longarrow.png"></ion-img>
             </ion-item>
-            <ion-item color="dark" routerLink="/mis-facturas">
+            <ion-item color="dark" routerLink="/mis-facturas" lines="none">
                 <ion-label class="ion-padding-start">Mis Facturas</ion-label>
                 <ion-img class="ion-padding-end" size="large"
-                          src="../../assets/longarrow.png"></ion-img>
+                         src="../../assets/longarrow.png"></ion-img>
             </ion-item>
-            <ion-item color="dark" routerLink="/perfil">
+            <ion-item color="dark" routerLink="/perfil" lines="none">
                 <ion-label class="ion-padding-start">Mi Perfil</ion-label>
-                <ion-icon class="ion-padding-end" color="light" size="large"
-                          src="../../assets/arrow-right.svg"></ion-icon>
+                <ion-img class="ion-padding-end" color="light" size="large"
+                         src="../../assets/longarrow.png"></ion-img>
             </ion-item>
-            <ion-item color="dark" routerLink="/descargas" class="ion-padding-bottom">
+            <ion-item color="dark" routerLink="/descargas" class="ion-padding-bottom" lines="none">
                 <ion-label class="ion-padding-start">Descargas</ion-label>
-                <ion-icon class="ion-padding-end" color="light" slot="end" size="large"
-                          src="../../assets/untitled.svg"></ion-icon>
+                <ion-img class="ion-padding-end" color="light" slot="end" size="large"
+                         src="../../assets/longarrow.png"></ion-img>
             </ion-item>
         </div>
     </ion-list>

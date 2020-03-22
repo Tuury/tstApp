@@ -1,11 +1,11 @@
 <ion-header>
     <ion-toolbar>
         <ion-buttons slot="end">
-            <ion-icon routerLink="/buscador" src="../../assets/search.svg" slot="end" size="large"></ion-icon>
-            <ion-icon src="../../assets/shopping-cart.svg" slot="end" size="large" routerLink="/carrito"></ion-icon>
+            <ion-icon class="headerIcon" routerLink="/buscador" src="../../assets/search.svg" slot="end" size="large"></ion-icon>
+            <ion-icon class="headerIcon"  src="../../assets/shopping-cart.svg" slot="end" size="large" routerLink="/carrito"></ion-icon>
             <ion-menu-button color="dark"></ion-menu-button>
         </ion-buttons>
-        <ion-img src="../../assets/logo.svg"></ion-img>
+        <ion-img id="logo" src="../../assets/logo.svg"></ion-img>
     </ion-toolbar>
 </ion-header>
 
@@ -14,7 +14,7 @@
         <ion-grid>
             <ion-row>
                 <ion-button fill="clear">
-                    <ion-icon src="../../assets/left-arrow.svg" color="light"></ion-icon>
+                    <ion-icon src="../../assets/left-arrow.svg" color="light" class="ion-padding-bottom"></ion-icon>
                 </ion-button>
             </ion-row>
             <ion-row>
